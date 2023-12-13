@@ -60,17 +60,49 @@
 		C4FBD6282B2A4D9F008630DB /* ContactList */ = {
 			isa = PBXGroup;
 			children = (
-				C4FBD6292B2A4D9F008630DB /* AppDelegate.swift */,
-				C4FBD62B2B2A4D9F008630DB /* SceneDelegate.swift */,
-				C4FBD62D2B2A4D9F008630DB /* ContactListViewController.swift */,
-				C4FBD63D2B2A5080008630DB /* DataStore.swift */,
-				C4FBD62F2B2A4D9F008630DB /* Main.storyboard */,
-				C4FBD63F2B2A6D8A008630DB /* DetailsViewController.swift */,
+				C4FBD6422B2A7694008630DB /* ViewControllers */,
+				C4FBD6442B2A76BB008630DB /* Storyboards */,
+				C4FBD6432B2A76AA008630DB /* Models */,
+				C4FBD6412B2A765B008630DB /* App */,
 				C4FBD6322B2A4DA1008630DB /* Assets.xcassets */,
-				C4FBD6342B2A4DA1008630DB /* LaunchScreen.storyboard */,
-				C4FBD6372B2A4DA1008630DB /* Info.plist */,
 			);
 			path = ContactList;
+			sourceTree = "<group>";
+		};
+		C4FBD6412B2A765B008630DB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C4FBD6292B2A4D9F008630DB /* AppDelegate.swift */,
+				C4FBD62B2B2A4D9F008630DB /* SceneDelegate.swift */,
+				C4FBD6372B2A4DA1008630DB /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		C4FBD6422B2A7694008630DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4FBD62D2B2A4D9F008630DB /* ContactListViewController.swift */,
+				C4FBD63F2B2A6D8A008630DB /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C4FBD6432B2A76AA008630DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C4FBD63D2B2A5080008630DB /* DataStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C4FBD6442B2A76BB008630DB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C4FBD62F2B2A4D9F008630DB /* Main.storyboard */,
+				C4FBD6342B2A4DA1008630DB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NTBUA69W9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -333,7 +365,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6NTBUA69W9;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ContactList/Info.plist;
+				INFOPLIST_FILE = ContactList/app/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
