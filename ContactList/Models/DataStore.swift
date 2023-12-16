@@ -6,7 +6,7 @@
 //
 
 
-class DataStore {
+final class DataStore {
     
     let firstNames = ["John", "Aaron", "Tim", "Ted", "Steven"]
     let lastNames = ["Smith", "Dow", "Isaacson", "Pennyworth", "Jankins"]
