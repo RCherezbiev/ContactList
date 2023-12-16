@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C46964F02B2A7ED0009EC230 /* PersonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C46964EF2B2A7ED0009EC230 /* PersonListViewController.swift */; };
-		C482C4532B2C969000E7EC4D /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C482C4522B2C969000E7EC4D /* TabBarViewController.swift */; };
 		C4FBD62A2B2A4D9F008630DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FBD6292B2A4D9F008630DB /* AppDelegate.swift */; };
 		C4FBD62C2B2A4D9F008630DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FBD62B2B2A4D9F008630DB /* SceneDelegate.swift */; };
 		C4FBD62E2B2A4D9F008630DB /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4FBD62D2B2A4D9F008630DB /* ContactListViewController.swift */; };
@@ -21,7 +20,6 @@
 
 /* Begin PBXFileReference section */
 		C46964EF2B2A7ED0009EC230 /* PersonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListViewController.swift; sourceTree = "<group>"; };
-		C482C4522B2C969000E7EC4D /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		C4FBD6262B2A4D9F008630DB /* ContactList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4FBD6292B2A4D9F008630DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4FBD62B2B2A4D9F008630DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 				C4FBD62D2B2A4D9F008630DB /* ContactListViewController.swift */,
 				C4FBD63F2B2A6D8A008630DB /* DetailsViewController.swift */,
 				C46964EF2B2A7ED0009EC230 /* PersonListViewController.swift */,
-				C482C4522B2C969000E7EC4D /* TabBarViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,7 +183,6 @@
 				C4FBD62A2B2A4D9F008630DB /* AppDelegate.swift in Sources */,
 				C4FBD63E2B2A5080008630DB /* DataStore.swift in Sources */,
 				C46964F02B2A7ED0009EC230 /* PersonListViewController.swift in Sources */,
-				C482C4532B2C969000E7EC4D /* TabBarViewController.swift in Sources */,
 				C4FBD6402B2A6D8A008630DB /* DetailsViewController.swift in Sources */,
 				C4FBD62C2B2A4D9F008630DB /* SceneDelegate.swift in Sources */,
 			);

@@ -8,8 +8,8 @@
 import UIKit
 
 final class PersonListViewController: UITableViewController {
-    private let contactList = DataStore.createRandomContactList()
-
+    var persons = DataStore.createRandomContactList()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,17 +27,17 @@ extension PersonListViewController {
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-            contactList.count
+            persons.count
         }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        "\(contactList[section].firstName) \(contactList[section].lastName)"
+        "\(persons[section].firstName) \(persons[section].lastName)"
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: "personlist", for: indexPath)
             
-            let person = contactList[indexPath.section]
+            let person = persons[indexPath.section]
             var content = cell.defaultContentConfiguration()
             
             switch indexPath.row {
