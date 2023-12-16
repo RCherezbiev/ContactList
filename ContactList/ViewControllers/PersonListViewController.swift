@@ -8,7 +8,7 @@
 import UIKit
 
 final class PersonListViewController: UITableViewController {
-    var persons = DataStore.createRandomContactList()
+    var persons = Person.createRandomContactList()
     
     override func viewDidLoad() {
         super.viewDidLoad()

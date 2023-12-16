@@ -1,10 +1,9 @@
 //
-//  Person.swift
+//  DataStore.swift
 //  ContactList
 //
-//  Created by Rustam Cherezbiev on 13.12.2023.
+//  Created by Rustam Cherezbiev on 16.12.2023.
 //
-
 
 final class DataStore {
     
@@ -35,27 +34,4 @@ final class DataStore {
         "contact@business.com",
         "admin@website.org"
     ]
-    
-    struct Person {
-        let firstName: String
-        let lastName: String
-        let phoneNumber: String
-        let email: String
-    }
-
-    static func createRandomContactList() -> [Person] {
-        var contacts: [Person] = []
-        
-        for _ in 1...10 {
-            let newContact = Person(
-                firstName: DataStore().firstNames.randomElement() ?? "",
-                lastName: DataStore().lastNames.randomElement() ?? "",
-                phoneNumber: DataStore().phoneNumbers.randomElement() ?? "",
-                email: DataStore().emails.randomElement() ?? ""
-            )
-            contacts.append(newContact)
-        }
-        return contacts
-    }
 }
-

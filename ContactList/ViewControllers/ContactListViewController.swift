@@ -9,7 +9,7 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
-    var persons = DataStore.createRandomContactList()
+    var persons = Person.createRandomContactList()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,15 +17,9 @@ final class ContactListViewController: UITableViewController {
 
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let indexPath = tableView.indexPathForSelectedRow,
-           let personInfoVC = segue.destination as? DetailsViewController {
-            personInfoVC.person = persons[indexPath.row]
-        } else if let personListVC = segue.destination as? PersonListViewController {
-            personListVC.persons = persons
-        }
-//        guard let indexPath = tableView.indexPathForSelectedRow else { return }
-//        let personInfoVC = segue.destination as? DetailsViewController
-//        personInfoVC?.person = persons[indexPath.row]
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        let personListVC = segue.destination as? DetailsViewController
+        personListVC?.person = persons[indexPath.row]
     }
     
     
