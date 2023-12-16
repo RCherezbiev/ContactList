@@ -8,14 +8,8 @@
 import UIKit
 
 final class PersonListViewController: UITableViewController {
-    var persons = Person.createRandomContactList()
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    let persons = Person.createRandomContactList()
 
-        tableView.separatorStyle = .singleLine
-        tableView.separatorColor = UIColor.gray
-    }
 }
 
 // MARK: - UITableViewDataSource

@@ -9,20 +9,14 @@ import UIKit
 
 final class ContactListViewController: UITableViewController {
     
-    var persons = Person.createRandomContactList()
+    let persons = Person.createRandomContactList()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         let personListVC = segue.destination as? DetailsViewController
         personListVC?.person = persons[indexPath.row]
     }
-    
-    
 }
 
 // MARK: - UITableViewDataSource

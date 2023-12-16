@@ -14,7 +14,7 @@ struct Person {
     static func createRandomContactList() -> [Person] {
         var contacts: [Person] = []
         
-        for _ in 1...10 {
+        for _ in 0...10 {
             let newContact = Person(
                 firstName: DataStore().firstNames.randomElement() ?? "",
                 lastName: DataStore().lastNames.randomElement() ?? "",
@@ -22,7 +22,6 @@ struct Person {
                 email: DataStore().emails.randomElement() ?? ""
             )
             contacts.append(newContact)
-            print(newContact)
         }
         return contacts
     }

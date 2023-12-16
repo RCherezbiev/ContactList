@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="1568.7022900763359" y="-140.14084507042253"/>
         </scene>
-        <!--Tab Bar View Controller-->
+        <!--Tab Bar Controller-->
         <scene sceneID="aRX-4i-A47">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qto-Xv-Utg" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Qto-Xv-Utg" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xpR-Ic-4Kj">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
